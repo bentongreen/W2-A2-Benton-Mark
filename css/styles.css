@@ -4,20 +4,64 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-
+* {
+  overflow: auto;
+}
 body {
   width: 100%;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
 }
 nav li {
   display: inline-block;
 }
-
+nav, section {
+  text-align: center;
+}
+table {
+  width: 20%;
+}
+tr {
+  font-size: 1.5em;
+}
 .header-section {
   background-image: url("../imgs/top-bkgrnd.jpg");
 }
-
+.column-two {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+}
+.column-right {
+  float: right;
+}
 .section-orange {
   background-color: #FF6124;
   color: white;
 }
+.flex-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.flex-items-default {
+    width: 300px;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+ .flex-item-1 {
+    width: 30%;
+    height: 20em;
+    text-align: center;
+    flex-grow: <property unused>
+    flex-shrink: <property unused>
+    flex-basis: <property unused>
+}
+
