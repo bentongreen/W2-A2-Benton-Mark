@@ -26,6 +26,7 @@ html {
 
 
 body {
+  font-family: Helvetica;
   width: 100%;
 }
 nav li {
@@ -71,4 +72,44 @@ nav li {
 
 .social-media li:hover{
 	background-color: #FF6124;
+}
+
+footer{
+	padding-top: 5%;
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+footer a{
+	text-decoration: none;
+	color: #FF6124;
+}
+
+.contact-us{
+	text-align: center;
+}
+
+.contact-us form{
+	color: #606060;
+}
+
+.contact-us button{
+	color: #FF6124;
+}
+
+.contact-us textarea{
+	color: #606060;
+	height: 40px;
+	width: 25%;
+	resize: none;
+}
+
+.contact-us div{
+	height: 264px;
+	width: 460px;
+	background-image: url("./../imgs/sm-map.gif");
+}
+
+.contact-us div:hover{
+	background-image: url("./../imgs/sm-map-hover.gif");
 }
