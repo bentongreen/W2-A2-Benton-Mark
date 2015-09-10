@@ -1,0 +1,23 @@
+{
+  "name": "w2-a2-benton-mark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bentongreen/W2-A2-Benton-Mark.git"
+  },
+  "keywords": [],
+  "author": "Mark, Benton",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/bentongreen/W2-A2-Benton-Mark/issues"
+  },
+  "homepage": "https://github.com/bentongreen/W2-A2-Benton-Mark#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
