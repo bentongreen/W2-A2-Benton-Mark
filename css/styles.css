@@ -259,6 +259,18 @@ footer a{
 	background-image: url("./../imgs/sm-map-hover.gif");
 }
 
+nav a{
+  text-decoration: none;
+  color: #686868;
+  font-weight: bold;
+  font-size: 1.15em;
+  padding-right: 5px;
+}
+
+nav{
+  border-bottom: 2.5px solid #B8B8B8;
+}
+
 /* -- best practice not to use screen widths exactly -- */
 /* -- media queries --*/
 /* -- additional breakpoints may be needed --*/
