@@ -24,3 +24,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Package dependencies
+######################
+node_modules/
+bower_components
