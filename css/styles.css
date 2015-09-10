@@ -29,7 +29,7 @@ html {
 body {
   font-family: Helvetica;
   width: 100%;
-/*  margin: auto;*/
+  margin: auto;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
@@ -38,6 +38,9 @@ nav li {
 }
 nav, section {
   text-align: center;
+ }
+ ul {
+    margin-left: -2em;
  }
 .header-section {
   font-size: 2em;
@@ -123,23 +126,25 @@ h1:before {
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
 }
 
  .flex-item-1 {
-    width: 30%;
-    height: 20em;
-    text-align: center;
-    flex-grow: <property unused>
-    flex-shrink: <property unused>
-    flex-basis: <property unused>
+  width: 21em;
+  height: 20em;
+  text-align: center;
 }
-/* - table css - */
+
+.flex-item-2 {
+  width: 22em;
+  height: 20em;
+  text-align: center;
+}
+
 .table-section {
   width: 100%;
   display: flex;
@@ -187,6 +192,34 @@ th, .table-price {
   padding-right: 1em;
 }
 
+progress {
+  width: 70%;
+  background-color: #FF6124;
+}
+progress::-moz-progress-bar {
+  background: #FF6124;
+}
+progress::-webkit-progress-value {
+  background-color: #FF6124;
+}
+.skill-list {
+  font-size: .8em;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: auto;
+}
+.skills-para {
+  padding: 2em 0;
+}
+
+.button-contact {
+  margin-bottom: 2em;
+  background-color: #FF6124;
+  color: #fff;
+  border: none;
+  font-size: .8em;
+  padding: 1em 2.5em;
+}
 .social-media{
 	list-style-type: none;
 }
