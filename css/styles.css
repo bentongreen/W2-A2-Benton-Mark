@@ -29,19 +29,73 @@ html {
 body {
   width: 100%;
   margin: auto;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
 nav li {
   display: inline-block;
 }
 nav, section {
   text-align: center;
+  padding-left: 8em;
+  padding-right: 8em;
 }
-table {
-  width: 20%;
+.header-section {
+  font-size: 2em;
+  font-family: helvetica;
 }
-tr {
-  font-size: 1.5em;
+h1 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 2em;
+}
+h1:after, h1:before {
+  top: 51%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  background-color: #585050;
+  margin-left: 2%;
+}
+h1:before {
+  margin-left: -52%;
+  text-align: right;
+}
+.section-orange > h1:before, .section-orange > h1:after {
+  background-color: #fff;
+}
+
+.section-black > h1:before, .section-black > h1:after {
+  background-color: #fff;
+}
+.subheader {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 2em;
+}
+.subheader:before, .subheader:after {
+  top: 51%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  background-color: #585050;
+  margin-left: 2%;
+}
+.subheader:before {
+  margin-left: -52%;
+  text-align: right;
+}
+.section-orange > .subheader:before, .section-orange > .subheader:after {
+  background-color: #fff;
+}
+.secition-white > .subheader:before, .section-white > .subheader:after {
+  background-color: #000;
 }
 .header-section {
   background-image: url("../imgs/top-bkgrnd.jpg");
@@ -56,18 +110,20 @@ tr {
 }
 .section-orange {
   background-color: #FF6124;
-  color: white;
+  color: #fff;
 }
-<<<<<<< HEAD
+.section-black {
+  background-color: #585050;
+  color: #fff;
+}
+
 .flex-container {
-    display:flex;
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     align-items: flex-start;
 }
-
 .flex-items-default {
     width: 300px;
     height: 250px;
@@ -83,6 +139,53 @@ tr {
     flex-grow: <property unused>
     flex-shrink: <property unused>
     flex-basis: <property unused>
+}
+/* - table css - */
+.table-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6em;
+}
+
+table {
+  position: relative;
+  float: left;
+  width: 20%;
+  margin-right: 1em;
+  font-size: .8em;
+}
+th {
+  background-color: #703A20;
+  color: #fff;
+}
+tr {
+  background-color: #fff;
+  color: #000;
+}
+tr:not(.table-head) {
+  border-bottom: .1em solid #FF6124;
+}
+td {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+th, .table-price {
+  padding: 1em;
+}
+.table-price {
+  color: #FF6124;
+}
+.table-foot {
+  background-color: #C1530D;
+  color: #fff;
+}
+.button-signup {
+  background-color: #FF6124;
+  margin: 1em;
+  border: none;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .social-media{
@@ -115,4 +218,15 @@ tr {
 
 .social-media li:hover{
 	background-color: #FF6124;
+}
+/* -- best practice not to use screen widths exactly -- */
+/* -- media queries --*/
+/* -- additional breakpoints may be needed --*/
+
+@media only screen and (min-width: 320px) {
+
+}
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
 }
