@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'socicon';
     src: url('../font/socicon.eot');
@@ -126,6 +128,7 @@ h1:before {
 }
 
 .flex-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,18 +137,18 @@ h1:before {
 }
 
  .flex-item-1 {
-  width: 21em;
-  height: 20em;
+  width: 100%;
+  height: 21em;
   text-align: center;
 }
 
 .flex-item-2 {
-  width: 22em;
+  width: 100%;
   height: 20em;
   text-align: center;
 }
 .flex-item-3 {
-  width: 20em;
+  width: 100%;
   height: 20em;
   text-align: center;
 }
@@ -216,7 +219,10 @@ progress::-webkit-progress-value {
 .skills-para {
   padding: 2em 0;
 }
-
+.team-title {
+      font-size: .8em;
+    font-weight: 300;
+}
 .button-contact {
   margin-bottom: 2em;
   background-color: #FF6124;
@@ -225,76 +231,114 @@ progress::-webkit-progress-value {
   font-size: .8em;
   padding: 1em 2.5em;
 }
+.face-pic {
+  padding-bottom: 1em;
+}
+.client-section {
+  display: flex;
+  text-align: left;
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 100%;
+}
+
+.left-arrow {
+  padding-right: 2em;
+}
+
+.client-pic {
+  width: 10%;
+  height: 10%;
+}
+.client-name {
+  color: #FF6124;
+  padding-left: 1em;
+}
+.client-title {
+  font-weight: 100;
+  font-size: .8em;
+}
+.client-text {
+  padding-left: 1em;
+}
 .social-media{
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .social-media a{
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .social-media li{
-	display: inline;
+  display: inline;
 }
 
 .social-media li:nth-of-type(1){
-	background-color: #3b5998;
+  background-color: #3b5998;
 }
 .social-media li:nth-of-type(2){
-	background-color: #4099FF;
+  background-color: #4099FF;
 }
 .social-media li:nth-of-type(3){
-	background-color: #ea4c89;
+  background-color: #ea4c89;
 }
 .social-media li:nth-of-type(4){
-	background-color: #007bb5;
+  background-color: #007bb5;
 }
 .social-media li:nth-of-type(5){
-	background-color: #fffc00;
+  background-color: #fffc00;
 }
 
 .social-media li:hover{
-	background-color: #FF6124;
+  background-color: #FF6124;
 }
 
 footer{
-	padding-top: 5%;
-	text-align: center;
-	padding-bottom: 10%;
+  padding-top: 3em;
+  text-align: center;
+  padding-bottom: 5em;
 }
 
 footer a{
-	text-decoration: none;
-	color: #FF6124;
+  text-decoration: none;
+  color: #FF6124;
 }
 
 .contact-us{
-	text-align: center;
+  text-align: center;
 }
 
 .contact-us form{
-	color: #606060;
+  color: #606060;
 }
 
 .contact-us button{
-	color: #FF6124;
+  color: #FF6124;
 }
 
 .contact-us textarea{
-	color: #606060;
-	height: 40px;
-	width: 25%;
-	resize: none;
+  color: #606060;
+  height: 5em;
+  width: 20em;
+  resize: none;
+  padding-top: .8em;
+}
+.message-button {
+  font-size: smaller;
+  padding: .5em 1em;
+  border: none;
+  background-color: #fff;
+}
+.map {
+/*  height: 264px; */
+  width: 460px;
+  background-image: url("./../imgs/sm-map.gif");
+  background-repeat: no-repeat;
 }
 
-.contact-us div{
-	height: 264px;
-	width: 460px;
-	background-image: url("./../imgs/sm-map.gif");
-}
-
-.contact-us div:hover{
-	background-image: url("./../imgs/sm-map-hover.gif");
+.map:hover{
+  background-image: url("./../imgs/sm-map-hover.gif");
+  background-repeat: no-repeat;
 }
 
 nav a{
@@ -307,6 +351,37 @@ nav a{
 nav{
   border-bottom: 2.5px solid #B8B8B8;
 }
+input, textarea {
+  background-color: #703A20;
+  border: none;
+  width: 20em;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+form {
+  padding: 3em;
+  width: 30%;
+
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+   font-size: .8em;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+   font-size: .8em;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+   font-size: .8em;
+}
+:-ms-input-placeholder {
+   color: #fff;
+   font-size: .8em;
+}
+
 
 /* -- best practice not to use screen widths exactly -- */
 /* -- media queries --*/
