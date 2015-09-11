@@ -11,14 +11,17 @@
     </head>
     <body>
         <a name="home"></a>
-        <nav>
+        <nav class="drop-down">
             <ul>
-                <li><a href="#home">Home.</a></li>
-                <li><a href="#services">Services.</a></li>
-                <li><a href="#portfolio">Portfolio.</a></li>
-                <li><a href="#about">About.</a></li>
-                <li><a href="#team">Team.</a></li>
+                <li class="selected"><a href="#home">Home.</a>
+                <ul class="hidden-class">
+                <li><a href="#services">Services.</a></li></br>
+                <li><a href="#portfolio">Portfolio.</a></li></br>
+                <li><a href="#about">About.</a></li></br>
+                <li><a href="#team">Team.</a></li></br>
                 <li><a href="#contact">Contact.</a></li>
+                </ul>
+                </li>
             </ul>
         </nav>
         <section class="header-section">
@@ -163,15 +166,17 @@
             <a name="portfolio"></a>
             <h1>PORTFOLIO</h1>
                 <div class="carousel_portfolio">
-                    <img src="./imgs/portfolio.jpg" alt="hand holding phone in city">
+                    <img src="./imgs/portfolio-sm.jpg" alt="hand holding phone in city">
                 </div>
-            <ul>
-                <li>All works</li>
-                <li>Webdesign</li>
-                <li>UI design</li>
-                <li>Icons design</li>
-                <li>Brand &#38; Logotypes</li>
+        <nav>        
+            <ul class="portfolio-nav">
+                <li><a href="#portfolio" class="selected selected-orange">All works</a></li>
+                <li><a href="#portfolio">Webdesign</a></li>
+                <li><a href="#portfolio">UI design</a></li>
+                <li><a href="#portfolio">Icons design</a></li>
+                <li><a href="#portfolio">Brand &#38; Logotypes</a></li>
             </ul>
+        </nav>    
             <ul class="flex-container">
                 <li class="flex-item-2">
                     <img src="./imgs/youtube.jpg" alt="computer screen">
