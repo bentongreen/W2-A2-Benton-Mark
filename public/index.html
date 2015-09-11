@@ -229,30 +229,6 @@
                <progress value="97" max="100"></progress>
                <p class="skills-para">Do you want be one of Avengers? Join us!</p>
                <button class="button-contact">CONTACT US</button>
-               <ul>
-                   <li>
-                       <p>PHOTOSHOP</p>
-                       <progress value="78" max="100"></progress>
-                   </li>
-                   <li>
-                       <p>HTML/CSS</p>
-                       <progress value="91" max="100"></progress>
-                   </li>
-                   <li>
-                       <p>ILLUSTRATOR</p>
-                       <progress value="63" max="100"></progress>
-                   </li>
-                   <li>
-                       <p>PHP</p>
-                       <progress value="55" max="100"></progress>
-                   </li>
-                   <li>
-                       <p>WORDPRESS</p>
-                       <progress value="97" max="100"></progress>
-                   </li>
-               </ul>
-               <p>Do you want be one of Avengers Join us!</p>
-               <button type="button">CONTACT US</button>
         </section>
         <section class="section-white">
             <a name="team"></a>
@@ -261,8 +237,8 @@
             <ul>
                 <li>
                     <h2>JONATHAN DOES</h2>
-                    <h3>CEO, UI&#38;UX designer</h3>
-                    <img src="./imgs/jondoe.png" alt="head picture of Jonathon Doe">
+                    <h3 class="team-title">CEO, UI&#38;UX designer</h3>
+                    <img class="face-pic" src="./imgs/jondoe.png" alt="head picture of Jonathon Doe">
                     <ul class="social-media">
                         <li><a href=""><span class="socicon">b</span></a></li>
                         <li><a href=""><span class="socicon">a</span></a></li>
@@ -274,8 +250,8 @@
                 </li>
                 <li>
                     <h2>JANNETE DOE</h2>
-                    <h3>Bussines &#38; marketing</h3>
-                    <img src="./imgs/jandoe.png" alt="head picture of Jannete Doe">
+                    <h3 class="team-title">Bussines &#38; marketing</h3>
+                    <img class="face-pic" src="./imgs/jandoe.png" alt="head picture of Jannete Doe">
                     <ul class="social-media">
                         <li><a href=""><span class="socicon">b</span></a></li>
                         <li><a href=""><span class="socicon">a</span></a></li>
@@ -287,8 +263,8 @@
                 </li>
                 <li>
                     <h2>JANE ELLA DOE</h2>
-                    <h3>UX specialist</h3>
-                    <img src="./imgs/janedoe.png" alt="head picture of Jane Ella Doe">
+                    <h3 class="team-title">UX specialist</h3>
+                    <img class="face-pic" src="./imgs/janedoe.png" alt="head picture of Jane Ella Doe">
                     <ul class="social-media">
                         <li><a href=""><span class="socicon">b</span></a></li>
                         <li><a href=""><span class="socicon">a</span></a></li>
@@ -300,8 +276,8 @@
                 </li>
                 <li>
                     <h2>JESSIE DOE</h2>
-                    <h3>Bussines and legacy</h3>
-                    <img src="./imgs/jessiedoe.png" alt="head picture of Jessie Doe">
+                    <h3 class="team-title">Bussines and legacy</h3>
+                    <img class="face-pic" src="./imgs/jessiedoe.png" alt="head picture of Jessie Doe">
                     <ul class="social-media">
                         <li><a href=""><span class="socicon">b</span></a></li>
                         <li><a href=""><span class="socicon">a</span></a></li>
@@ -313,26 +289,31 @@
                 </li>
             </ul>
             <h2 class="subheader">CLIENTS</h2>
-            <div>
-                <img src="./imgs/mattbroderic.png" alt="">
-                <h3>Matthew Broderic (CEO Hopicola Inc.)</h3>
-                 <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry standard dummy text since the 1500's, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            <div class="client-section">
+                <button class="left-arrow"><img src="./imgs/l-arrow.png"></button>
+                <img class="client-pic" src="./imgs/mattbroderic.png" alt="">
+                <div>
+                    <h3><span class="client-name">Matthew Broderic </span><span class="client-title">(CEO Hopicola Inc.)</span></h3>
+                    <p class="client-text">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry standard dummy text since the 1500's, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                </div>
+                 <button class="right-arrow"><img src="./imgs/r-arrow.png"></button>
             </div>
         </section>
         <section class="section-orange contact-us">
             <a name="contact"></a>
             <h1>CONTACT</h1>
             <p>Contrary to popular belief, Lorem Ipsum is not simply random. It has roots in a piece of classical Latin literature from 45BC, making it over 2000 years old.  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
-            <form>
-                <input type="text" placeholder="Company name" id="form_companyname">
-                <input type="email" placeholder="Your@mail.com" id="form_email">
-                <input type="text" placeholder="Message..." id="form_message">
-            </form>
-        </br>
-            <textarea name="message" id="contact-form">Message...</textarea>
-            <div><img src=""></div>
-        </br>
-            <button type="submit">SEND MESSAGE</button>
+                <div class="flex-container">
+                    <form class="flex-item-1">
+                        <input type="text" placeholder="Company name" id="form_companyname">
+                        <input type="email" placeholder="Your@mail.com" id="form_email">
+                        <textarea name="message" id="contact-form" placeholder="Message..."></textarea>
+                        <button class="message-button" type="submit">SEND MESSAGE</button>
+                    </form>
+                    <div class="map flex-item-1">
+                        <img src="">
+                    </div>
+                </div>
         </section>
         <footer>
             <p>Theme by <a href="">Pierre Borodin</a> &#169; copyright 2012</p>
