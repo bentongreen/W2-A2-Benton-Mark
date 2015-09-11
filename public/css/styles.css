@@ -259,16 +259,12 @@ progress::-webkit-progress-value {
   width: 100%;
 }
 .arrow {
-  margin-top: 2em;
-}
-.left-arrow {
-  padding-right: 2em;
-}
-.right-arrow {
-  padding-right: 2em;
+  padding-bottom: 2em;
 }
 .client-pic {
-  min-width: 10%;
+  min-width: 11%;
+  display: block;
+  margin: auto;
 }
 .client-name {
   color: #FF6124;
@@ -340,7 +336,7 @@ footer a{
 }
 
 .contact-us textarea{
-  color: #606060;
+  color: #fff;
   height: 5em;
   width: 100%;
   resize: none;
@@ -379,6 +375,7 @@ input, textarea {
   width: 100%;
   padding-left: 1em;
   margin-bottom: 1em;
+  color: #fff;
 }
 
 form {
