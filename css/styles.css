@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'socicon';
     src: url('../font/socicon.eot');
@@ -126,6 +128,7 @@ h1:before {
 }
 
 .flex-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,18 +137,18 @@ h1:before {
 }
 
  .flex-item-1 {
-  width: 21em;
-  height: 20em;
+  /*width: 15em;*/
+  height: 21em;
   text-align: center;
 }
 
 .flex-item-2 {
-  width: 22em;
+  /*width: 22em;*/
   height: 20em;
   text-align: center;
 }
 .flex-item-3 {
-  width: 20em;
+  /*width: 20em;*/
   height: 20em;
   text-align: center;
 }
@@ -281,20 +284,23 @@ footer a{
 }
 
 .contact-us textarea{
-	color: #606060;
-	height: 40px;
-	width: 25%;
-	resize: none;
+  color: #606060;
+  height: 5em;
+  width: 20em;
+  resize: none;
+  padding-top: .8em;
 }
 
-.contact-us div{
+.map {
 	height: 264px;
 	width: 460px;
 	background-image: url("./../imgs/sm-map.gif");
+  background-repeat: no-repeat;
 }
 
-.contact-us div:hover{
+.map:hover{
 	background-image: url("./../imgs/sm-map-hover.gif");
+  background-repeat: no-repeat;
 }
 
 nav a{
@@ -307,6 +313,37 @@ nav a{
 nav{
   border-bottom: 2.5px solid #B8B8B8;
 }
+input, textarea {
+  background-color: #703A20;
+  border: none;
+  width: 20em;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+form {
+  padding: 3em;
+  width: 30%;
+
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+   font-size: .8em;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+   font-size: .8em;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+   font-size: .8em;
+}
+:-ms-input-placeholder {
+   color: #fff;
+   font-size: .8em;
+}
+
 
 /* -- best practice not to use screen widths exactly -- */
 /* -- media queries --*/
