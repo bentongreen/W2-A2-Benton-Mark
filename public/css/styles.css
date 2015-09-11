@@ -1,33 +1,16 @@
-
-
-@font-face {
-    font-family: 'socicon';
-    src: url('../font/socicon.eot');
-    src: url('../font/socicon.eot?#iefix') format('embedded-opentype'),
-         url('../font/socicon.woff') format('woff'),
-         url('../font/socicon.ttf') format('truetype'),
-         url('../font/socicon.svg#sociconregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    text-transform: initial;
-}
-
-.socicon {
-    font-family: 'socicon' !important;
-    color: #ffffff;
-    padding: 3px;
-    font-size: 1.2em;
-}
-
+/*---general page and components css---*/
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
 * {
   overflow: auto;
 }
+
 body {
   font-family: Helvetica;
   width: 100%;
@@ -35,29 +18,29 @@ body {
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
+
 nav li {
   display: inline-block;
 }
+
 nav, section {
   text-align: center;
  }
+
 section {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
 }
+
 ul {
     margin-left: -1em;
 }
+
 img {
   max-width: 100%;
 }
-.header-section {
-  font-size: 2em;
-  font-family: helvetica;
-  height: 15em;
-  padding-top: 4em;
-}
+
 h1 {
   position: relative;
   overflow: hidden;
@@ -65,6 +48,7 @@ h1 {
   margin-bottom: 2em;
   margin-top: 2em;
 }
+
 h1:after, h1:before {
   top: 51%;
   width: 50%;
@@ -75,10 +59,12 @@ h1:after, h1:before {
   background-color: #585050;
   margin-left: 2%;
 }
+
 h1:before {
   margin-left: -52%;
   text-align: right;
 }
+
 .section-orange > h1:before, .section-orange > h1:after {
   background-color: #fff;
 }
@@ -116,9 +102,7 @@ h1:before {
 .section-white > .subheader:before, .section-white > .subheader:after {
   background-color: #000;
 }
-.header-section {
-  background-image: url("../imgs/top-bkgrnd.jpg");
-}
+
 .column-two {
   -webkit-column-count: 2;
      -moz-column-count: 2;
@@ -137,6 +121,32 @@ h1:before {
   color: #fff;
 }
 
+/*---Navigation menu css---*/
+.hidden-class{
+  display: none;
+}
+
+.selected:hover>.hidden-class{
+  display:block;
+}
+
+.drop-down{
+  font-size: 1.2em;
+}
+
+/*---main header css---*/
+.header-section {
+  font-size: 2em;
+  font-family: helvetica;
+  height: 15em;
+  padding-top: 4em;
+}
+
+.header-section {
+  background-image: url("../imgs/top-bkgrnd.jpg");
+}
+
+/*---services section css---*/
 .flex-container {
   width: 100%;
   display: flex;
@@ -163,6 +173,7 @@ h1:before {
   height: 20em;
   text-align: center;
 }
+
 
 .table-section {
   width: 100%;
@@ -213,6 +224,7 @@ th, .table-price {
   padding-right: 1em;
 }
 
+/*---About and skills section css---*/
 progress {
   width: 70%;
   background-color: #FF6124;
@@ -232,6 +244,33 @@ progress::-webkit-progress-value {
 .skills-para {
   padding: 2em 0;
 }
+
+/*---portfolio section css---*/
+nav a{
+  text-decoration: none;
+  color: #686868;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+nav{
+  border-bottom: 2.5px solid #B8B8B8;
+}
+
+nav a:hover{
+  color: #000000;
+}
+
+.portfolio-nav a:hover{
+  background-color: #FF6124;
+  color: #ffffff;
+}
+
+.portfolio-nav li{
+margin-right: 1em;
+}
+
+/*---Team and clients CSS---*/
 .team-title {
   font-size: .8em;
   font-weight: 300;
@@ -278,6 +317,27 @@ progress::-webkit-progress-value {
   padding-left: 1em;
   padding-bottom: 2em;
 }
+
+/*---css for social media links/icon fonts ---*/
+@font-face {
+    font-family: 'socicon';
+    src: url('../font/socicon.eot');
+    src: url('../font/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../font/socicon.woff') format('woff'),
+         url('../font/socicon.ttf') format('truetype'),
+         url('../font/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+.socicon {
+    font-family: 'socicon' !important;
+    color: #ffffff;
+    padding: 3px;
+    font-size: 1.2em;
+}
+
 .social-media{
   list-style-type: none;
   margin-left: -2em;
@@ -311,17 +371,7 @@ progress::-webkit-progress-value {
   background-color: #FF6124;
 }
 
-footer{
-  padding-top: 3em;
-  text-align: center;
-  padding-bottom: 5em;
-}
-
-footer a{
-  text-decoration: none;
-  color: #FF6124;
-}
-
+/*---Contact us section css---*/
 .contact-us{
   text-align: center;
 }
@@ -359,16 +409,6 @@ footer a{
   background-repeat: no-repeat;
 }
 
-nav a{
-  text-decoration: none;
-  color: #686868;
-  font-weight: bold;
-  font-size: 1.15em;
-}
-
-nav{
-  border-bottom: 2.5px solid #B8B8B8;
-}
 input, textarea {
   background-color: #703A20;
   border: none;
@@ -401,42 +441,28 @@ form {
    font-size: .8em;
 }
 
+/*---footer css---*/
+footer{
+  padding-top: 3em;
+  text-align: center;
+  padding-bottom: 5em;
+}
 
-/* -- best practice not to use screen widths exactly -- */
+footer a{
+  text-decoration: none;
+  color: #FF6124;
+}
+
+
 /* -- media queries --*/
+/* -- best practice not to use screen widths exactly -- */
 /* -- additional breakpoints may be needed --*/
-
 @media only screen and (min-width: 320px) {
 
 }
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
+
+@media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
 /* padding-left: 8em;
   padding-right: 8em;
 */
-}
-
-nav a:hover{
-  color: #000000;
-}
-
-.portfolio-nav a:hover{
-  background-color: #FF6124;
-  color: #ffffff;
-}
-
-.portfolio-nav li{
-margin-right: 1em;
-}
-
-.hidden-class{
-  display: none;
-}
-
-.selected:hover>.hidden-class{
-  display:block;
-}
-
-.drop-down{
-  font-size: 1.2em;
 }
