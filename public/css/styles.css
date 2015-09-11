@@ -397,3 +397,27 @@ form {
 */
 }
 
+nav a:hover{
+  color: #000000;
+}
+
+.portfolio-nav a:hover{
+  background-color: #FF6124;
+  color: #ffffff;
+}
+
+.portfolio-nav li{
+margin-right: 1em;
+}
+
+.hidden-class{
+  display: none;
+}
+
+.selected:hover>.hidden-class{
+  display:block;
+}
+
+.drop-down{
+  font-size: 1.2em;
+}
