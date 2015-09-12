@@ -183,7 +183,7 @@ object {
   margin-left: -.5em;
 }
 .flex-item-3 {
-  width: 100%;
+  width: 22.5%;
   height: 20em;
   text-align: center;
 }
@@ -286,7 +286,9 @@ margin-right: 1em;
 /*.carousel_sm {
   display: inline;
 }*/
-
+.carousel-lrg {
+  width: 67em;
+}
 
 /*---Team and clients CSS---*/
 .team-title {
@@ -520,11 +522,9 @@ footer a{
     width: 27%;
   }
   .flex-item-2 {
-    width: 30%;
+    width: 32%;
   }
-  .flex-item-3 {
-    width: 20%;
-  }
+
   p {
     margin-left: 10%;
     margin-right: 10%;
@@ -552,5 +552,14 @@ footer a{
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .flex-item-3 {
+    width: 33%;
+  }
+}
 
-
+@media only screen and (max-width: 500px) {
+  .flex-item-3 {
+    width: 50%;
+  }
+}
