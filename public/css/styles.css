@@ -266,11 +266,11 @@ nav a{
   font-weight: bold;
   font-size: 1.15em;
 }
-
-nav{
+/*
+nav {
   border-bottom: 2.5px solid #B8B8B8;
 }
-
+*/
 nav a:hover{
   color: #000000;
 }
@@ -283,6 +283,10 @@ nav a:hover{
 .portfolio-nav li{
 margin-right: 1em;
 }
+/*.carousel_sm {
+  display: inline;
+}*/
+
 
 /*---Team and clients CSS---*/
 .team-title {
@@ -434,7 +438,6 @@ input, textarea {
 
 form {
   padding-top: 3em;
-
   max-width: 100%;
 }
 
@@ -471,6 +474,22 @@ footer a{
 /* -- media queries --*/
 /* -- best practice not to use screen widths exactly -- */
 /* -- additional breakpoints may be needed --*/
+
+@media only screen and (max-width: 700px) {
+  div[class=carousel_portfolio] {
+    display: block;
+    background-image: url("./../imgs/portfolio-sm.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32em !important;
+    height: 16em !important;
+    max-width: 100%;
+  }
+  img[class="carousel-lrg"] {
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width: 320px) {
   object {
     display: none;
@@ -481,22 +500,57 @@ footer a{
 }
 
 @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-/* padding-left: 8em;
-  padding-right: 8em;
-*/
-body {
-  margin: 0 auto;
+
+  body {
+    margin: 0 auto;
+  }
+  object {
+    display: inline;
+    width: 14.5em;
+    margin-left: -1em;
+    margin-top: -5.7em;
+  }
+  header > p {
+    margin-bottom: -.7em;
+  }
+  .awesome-sm {
+    border-bottom: none;
+  }
+  .flex-item-1 {
+    width: 27%;
+  }
+  .flex-item-2 {
+    width: 30%;
+  }
+  .flex-item-3 {
+    width: 20%;
+  }
+  p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .column-right {
+    margin-left: 3%;
+    margin-right: 22%;
+  }
+  .column-left {
+    margin-left:22%;
+    margin-right: 3%;
+  }
+
 }
-object {
-  display: inline;
-  width: 14.5em;
-  margin-left: -1em;
-  margin-top: -5.7em;
+
+@media only screen and (max-width: 1200px) {
+  .flex-item-2 {
+    width: 50%;
+  }
 }
-header > p {
-  margin-bottom: -.7em;
+
+@media only screen and (max-width: 750px) {
+  .flex-item-2 {
+    width: 100%;
+  }
 }
-.awesome-sm {
-  border-bottom: none;
-}
-}
+
+
+
