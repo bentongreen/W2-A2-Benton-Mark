@@ -18,6 +18,7 @@ body {
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
+
 nav {
   margin-left: -1em;
 }
@@ -28,7 +29,9 @@ nav li {
 nav, section {
   text-align: center;
  }
-
+header > p {
+    margin-bottom: -.7em;
+  }
 section {
   width: 100%;
   padding-left: 5%;
@@ -308,32 +311,47 @@ margin-right: 1em;
   font-size: .9em;
   margin: 1em;
 }
+.client-wrapper {
+  display: inline-flex;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 3em;
+}
 .client-section {
   display: flex;
   text-align: left;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
   width: 100%;
 }
 .arrow {
   padding-bottom: 2em;
+  margin-top: 4em;
 }
 .client-pic {
-  min-width: 11%;
-  display: block;
-  margin: auto;
+      width: 29%;
+    height: 0%;
+    display: block;
+
+    min-width: 13%;
+    margin-top: 2em;
 }
 .client-name {
   color: #FF6124;
   padding-left: 1em;
+  margin-left: .7em;
 }
 .client-title {
   font-weight: 400;
   font-size: .8em;
 }
 .client-text {
-  padding-left: 1em;
+  margin-left: 2em;
   padding-bottom: 2em;
+  margin-right: 0;
+}
+.client-text-wrapper {
+  margin-top: 1em;
 }
 
 /*---css for social media links/icon fonts ---*/
@@ -493,12 +511,24 @@ footer a{
   }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 300px) and (max-width: 850px) {
   object {
     display: none;
   }
   .awesome-sm {
     border-bottom: 3px solid #FF6124;
+  }
+  header > p {
+    margin-bottom: .3em;
+    padding-bottom: .3em;
+  }
+}
+@media only screen and (min-width: 850px) {
+  object {
+    display: inline;
+    width: 14.5em;
+    margin-left: -1.75em;
+    margin-top: -5.7em;
   }
 }
 
@@ -506,18 +536,7 @@ footer a{
   body {
     margin: 0 auto;
   }
-  object {
-    display: inline;
-    width: 14.5em;
-    margin-left: -1em;
-    margin-top: -5.7em;
-  }
-  header > p {
-    margin-bottom: -.7em;
-  }
-  .awesome-sm {
-    border-bottom: none;
-  }
+
   .contact-us form {
     width: 38%;
     height: 20em;
@@ -549,11 +568,11 @@ footer a{
 }
 
 @media only screen and (max-width: 1200px) {
-  .flex-item-2 {
-    width: 50%;
-  }
   .flex-item-1 {
     width: 35%;
+  }
+  .flex-item-2 {
+    width: 50%;
   }
    .flex-item-4 {
     width: 50%;
@@ -564,26 +583,44 @@ footer a{
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .flex-item-1 {
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .flex-item-2 {
     width: 100%;
   }
+  .client-wrapper {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 700px) {
+  .flex-item-1 {
+    width: 60%;
+  }
   .flex-item-3 {
     width: 33%;
   }
   .flex-item-4 {
     width: 100%;
   }
-  .flex-item-1 {
-    width: 100%;
+    .client-wrapper {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .flex-item-3 {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .client-wrapper {
+    display: inline-flex;
   }
 }
