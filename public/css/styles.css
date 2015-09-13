@@ -12,14 +12,12 @@ html {
 }
 
 body {
-  font-family: Helvetica;
   width: 100%;
   margin: auto;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
 
-}
 nav {
   margin-left: -1em;
 }
@@ -77,10 +75,6 @@ header {
   margin-bottom: -3em;
 }
 
-/*object {
-  display: none;
-}
-*/
 .section-orange > h1:before, .section-orange > h1:after {
   background-color: #fff;
 }
@@ -126,6 +120,7 @@ header {
 .column-two {
   -webkit-column-count: 2;
      -moz-column-count: 2;
+     -ms-column-count: 2;
           column-count: 2;
 }
 .column-right {
@@ -143,15 +138,15 @@ header {
 }
 
 /*---Navigation menu css---*/
-.hidden-class{
+.hidden-class {
   display: none;
 }
 
-.selected:hover>.hidden-class{
-  display:block;
+.selected:hover >.hidden-class {
+  display: block;
 }
 
-.drop-down{
+.drop-down {
   font-size: 1.2em;
 }
 
@@ -246,6 +241,9 @@ th, .table-price {
   padding-left: 1em;
   padding-right: 1em;
 }
+.section-orange p, .section-black p {
+  line-height: 1.5em;
+}
 
 /*---About and skills section css---*/
 progress {
@@ -269,14 +267,17 @@ progress::-webkit-progress-value {
 }
 
 /*---portfolio section css---*/
-nav a{
+nav a {
   text-decoration: none;
   color: #686868;
   font-weight: bold;
   font-size: 1.15em;
 }
+nav ul {
+  margin-left: -2em;
+}
 
-nav a:hover{
+nav a:hover {
   color: #000000;
 }
 
@@ -286,7 +287,7 @@ nav a:hover{
 }
 
 .portfolio-nav li{
-margin-right: 1em;
+  margin-right: 1em;
 }
 
 .carousel-lrg {
@@ -336,12 +337,11 @@ margin-right: 1em;
   margin-top: 4em;
 }
 .client-pic {
-      width: 29%;
-    height: 0%;
-    display: block;
-
-    min-width: 13%;
-    margin-top: 2em;
+  width: 29%;
+  height: 0%;
+  display: block;
+  min-width: 13%;
+  margin-top: 2em;
 }
 .client-name {
   color: #FF6124;
@@ -371,11 +371,10 @@ margin-right: 1em;
          url('../font/socicon.svg#sociconregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .socicon {
-    font-family: 'socicon' !important;
+    font-family: 'socicon';
     color: #ffffff;
     font-size: .9em;
     padding: 0 .5em;
@@ -513,12 +512,12 @@ footer a{
     background-image: url("./../imgs/portfolio-sm.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 32em !important;
-    height: 16em !important;
+    width: 32em;
+    height: 16em;
     max-width: 100%;
   }
   img[class="carousel-lrg"] {
-    display: none !important;
+    display: none;
   }
 }
 
