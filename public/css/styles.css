@@ -54,6 +54,8 @@ h1 {
   margin-top: 2em;
 }
 
+/* -- lines created on h1 -- */
+
 h1:after, h1:before {
   top: 51%;
   width: 32%;
@@ -82,6 +84,7 @@ header {
 .section-black > h1:before, .section-black > h1:after {
   background-color: #fff;
 }
+
 .clip {
   margin-left: 3em;
 }
@@ -509,10 +512,7 @@ footer a{
   color: #FF6124;
 }
 
-
 /* -- media queries --*/
-/* -- best practice not to use screen widths exactly -- */
-/* -- additional breakpoints may be needed --*/
 
 @media only screen and (max-width: 700px) {
   div[class=carousel_portfolio] {
@@ -555,10 +555,6 @@ footer a{
  }
 }
 
-/*.selected:hover >.hidden-class {
-  display: block;
-}
-*/
 @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
   body {
     margin: 0 auto;
@@ -661,8 +657,6 @@ footer a{
     border-radius: .5em;
     padding: .4em;
   }
-
-
 }
 
 @media only screen and (max-width: 500px) {
