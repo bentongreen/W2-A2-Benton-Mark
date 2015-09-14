@@ -231,6 +231,8 @@ th, .table-price {
   border: none;
   padding-left: 1em;
   padding-right: 1em;
+  text-decoration: none;
+  color: #FFF;
 }
 .section-orange p, .section-black p {
   line-height: 1.5em;
@@ -366,11 +368,31 @@ nav ul {
     font-style: normal;
 }
 
+.facebook:before {
+  content: "b";
+}
+
+.twitter:before {
+  content: "a";
+}
+
+.dribble:before {
+  content: "D";
+}
+
+.linkedin:before {
+  content: "j";
+}
+
+.gplus:before {
+  content: "c";
+}
+
 .socicon {
-    font-family: 'socicon';
-    color: #ffffff;
-    font-size: .9em;
-    padding: 0 .5em;
+  font-family: 'socicon';
+  color: #ffffff;
+  font-size: .9em;
+  padding: 0 .5em;
 }
 
 .social-media{
