@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  width: 100%;
   margin: auto;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
@@ -141,16 +140,9 @@ header {
 }
 
 /*---Navigation menu css---*/
-.hidden-class {
-  display: inline-block;
-}
 
 .nav-li {
   margin-left: 3em;
-}
-
-.drop-down {
-  font-size: 1.2em;
 }
 
 /*---main header css---*/
@@ -443,7 +435,6 @@ nav a:hover {
   color: #fff;
   height: 10em;
   width: 100%;
-  resize: none;
   padding-top: .8em;
 }
 .message-button {
@@ -619,9 +610,7 @@ footer a{
   .client-wrapper {
     display: block;
   }
-  .selected:hover > .hidden-class {
-  display: block;
-  }
+
 }
 
 @media only screen and (max-width: 700px) {
