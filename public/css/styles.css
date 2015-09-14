@@ -141,9 +141,6 @@ header {
 }
 
 /*---Navigation menu css---*/
-.hidden-class {
-  display: inline-block;
-}
 
 .nav-li {
   margin-left: 3em;
@@ -443,7 +440,6 @@ nav a:hover {
   color: #fff;
   height: 10em;
   width: 100%;
-  resize: none;
   padding-top: .8em;
 }
 .message-button {
@@ -618,9 +614,6 @@ footer a{
   }
   .client-wrapper {
     display: block;
-  }
-  .selected:hover > .hidden-class {
-  display: block;
   }
 }
 
