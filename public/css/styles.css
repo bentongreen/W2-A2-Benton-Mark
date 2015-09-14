@@ -31,10 +31,7 @@ header > p {
     margin-bottom: -.7em;
   }
 section {
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2em;
+  padding: 2em 5% 0;
 }
 
 ul {
@@ -48,7 +45,6 @@ img {
 h1 {
   position: relative;
   overflow: hidden;
-  z-index: 1;
   margin-bottom: 2em;
   margin-top: 2em;
 }
@@ -60,7 +56,6 @@ h1:after, h1:before {
   width: 32%;
   content: "";
   position: absolute;
-  overflow: hidden;
   height: 1px;
   background-color: #585050;
   margin-left: 3%;
@@ -91,7 +86,6 @@ header {
 .subheader {
   position: relative;
   overflow: hidden;
-  z-index: 1;
   margin-bottom: 2em;
   margin-top: 2em;
 }
@@ -100,7 +94,6 @@ header {
   width: 20%;
   content: "";
   position: absolute;
-  overflow: hidden;
   height: 1px;
   background-color: #585050;
   margin-left: 2%;
@@ -122,7 +115,6 @@ header {
 .column-two {
   -webkit-column-count: 2;
      -moz-column-count: 2;
-     -ms-column-count: 2;
           column-count: 2;
 }
 .column-right {
@@ -148,7 +140,7 @@ header {
 /*---main header css---*/
 .header-section {
   font-size: 2em;
-  font-family: helvetica;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   height: 17em;
 }
 
@@ -274,13 +266,15 @@ nav a {
   font-weight: bold;
   font-size: 1.15em;
 }
+
+nav-a:hover {
+  color: #000000;
+}
+
 nav ul {
   margin-left: -2em;
 }
 
-nav a:hover {
-  color: #000000;
-}
 
 .portfolio-nav a:hover{
   background-color: #FF6124;
@@ -301,9 +295,7 @@ nav a:hover {
   font-weight: 300;
   margin-top: -1.2em;
 }
-.team-li {
-  margin-left: -2em;
-}
+
 .button-contact {
   margin-bottom: 4em;
   background-color: #FF6124;
