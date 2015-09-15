@@ -17,9 +17,7 @@ body {
   font-weight: 300;
 }
 
-nav {
-  margin-left: -1em;
-}
+
 nav li {
   display: inline-block;
 }
@@ -31,11 +29,6 @@ nav, section {
 section {
   padding: 2em 5% 0;
 }
-
-ul {
-    margin-left: -1em;
-}
-
 img {
   max-width: 100%;
 }
@@ -63,21 +56,12 @@ h1:before {
   text-align: right;
 }
 
-header {
-  margin-top: 3em;
-  margin-bottom: -3em;
-}
-
 .section-orange > h1:before, .section-orange > h1:after {
   background-color: #fff;
 }
 
 .section-black > h1:before, .section-black > h1:after {
   background-color: #fff;
-}
-
-.clip {
-  margin-left: 3em;
 }
 
 .subheader {
@@ -154,27 +138,25 @@ header {
   -webkit-flex-direction: row;
   -webkit-flex-wrap: wrap;
 }
+.flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
+  text-align: center:;
+}
 
- .flex-item-1 {
+.flex-item-1 {
   width: 100%;
   height: 24em;
-  text-align: center;
 }
 
 .flex-item-2 {
   width: 100%;
   height: 20em;
-  text-align: center;
-  margin-left: -.5em;
 }
 .flex-item-3 {
   width: 22%;
   height: 20em;
-  text-align: center;
 }
 .flex-item-4 {
   width: 22.5%;
-  text-align: center;
 }
 
 .table-section {
@@ -265,11 +247,6 @@ nav a {
 nav-a:hover {
   color: #000000;
 }
-
-nav ul {
-  margin-left: -2em;
-}
-
 
 .portfolio-nav a:hover{
   background-color: #FF6124;
@@ -403,19 +380,19 @@ nav ul {
   display: inline;
 }
 
-.social-media li:nth-of-type(1){
+.social-media .facebook {
   background-color: #3b5998;
 }
-.social-media li:nth-of-type(2){
+.social-media .twitter {
   background-color: #4099FF;
 }
-.social-media li:nth-of-type(3){
+.social-media .dribble {
   background-color: #ea4c89;
 }
-.social-media li:nth-of-type(4){
+.social-media .linkedin {
   background-color: #007bb5;
 }
-.social-media li:nth-of-type(5){
+.social-media .gplus {
   background-color: #fffc00;
 }
 
@@ -424,21 +401,21 @@ nav ul {
 }
 
 /*---Contact us section css---*/
-.contact-us{
+.contact-us {
   text-align: center;
 }
 
-.contact-us form{
+.contact-us form {
   color: #606060;
   width: 100%;
 }
 
-.contact-us button{
+.contact-us button {
   color: #FF6124;
   font-weight: 500;
 }
 
-.contact-us textarea{
+.contact-us textarea {
   color: #fff;
   height: 10em;
   width: 100%;
