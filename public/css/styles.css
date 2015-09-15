@@ -38,6 +38,12 @@ h1 {
   margin-bottom: 2em;
   margin-top: 2em;
 }
+header > p {
+  padding-bottom: .5em;
+}
+.awesome-sm {
+    border-bottom: 3px solid #FF6124;
+}
 
 /* -- lines created on h1 -- */
 
@@ -121,7 +127,7 @@ h1:before {
 .header {
   font-size: 2em;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-  height: 17em;
+  height: 14em;
   background-image: url("../imgs/top-bkgrnd.jpg");
 }
 
@@ -145,6 +151,7 @@ h1:before {
 .flex-item-1 {
   width: 100%;
   height: 24em;
+  padding: 0 2%;
 }
 
 .flex-item-2 {
@@ -184,8 +191,6 @@ th {
 tr {
   background-color: #fff;
   color: #000;
-}
-tr:not(.table-head) {
   border-bottom: .1em solid #FF6124;
 }
 td {
@@ -239,9 +244,9 @@ progress::-webkit-progress-value {
 /*---portfolio section css---*/
 nav a {
   text-decoration: none;
-  color: #686868;
+  color: #989595;
   font-weight: bold;
-  font-size: 1.15em;
+  padding: 0 1em;
 }
 
 nav-a:hover {
@@ -258,7 +263,15 @@ nav-a:hover {
 }
 
 .carousel-lrg {
-  width: 66.5em;
+  width: 67em;
+  margin-left: 3%;
+}
+.design {
+  margin-bottom: 0;
+}
+.design + p {
+  color: #989595;
+  margin-top: 0;
 }
 
 /*---Team and clients CSS---*/
@@ -401,9 +414,7 @@ nav-a:hover {
 }
 
 /*---Contact us section css---*/
-.contact-us {
-  text-align: center;
-}
+
 
 .contact-us form {
   color: #606060;
@@ -418,7 +429,7 @@ nav-a:hover {
 .contact-us textarea {
   color: #fff;
   height: 10em;
-  width: 100%;
+
   padding-top: .8em;
 }
 .message-button {
@@ -505,9 +516,7 @@ footer a{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 850px) {
-  .awesome-sm {
-    border-bottom: 3px solid #FF6124;
-  }
+
   header > p {
     margin-bottom: .3em;
     padding-bottom: .3em;
@@ -523,15 +532,10 @@ footer a{
 }
 
 @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-  body {
-    margin: 0 auto;
-  }
-
   .contact-us form {
     width: 38%;
     height: 20em;
     margin-right: 3em;
-
   }
   .message-button {
     float: right;
@@ -542,10 +546,6 @@ footer a{
   .flex-item-2 {
     width: 31.5%;
   }
-  p {
-    margin-left: 10%;
-    margin-right: 12%;
-  }
   .column-right {
     width: 32em;
     margin-right: 16%;
@@ -554,7 +554,6 @@ footer a{
     margin-left: 16%;
     width: 32em;
   }
-
 }
 
 @media only screen and (max-width: 1200px) {
