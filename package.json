@@ -19,5 +19,8 @@
   "homepage": "https://github.com/bentongreen/W2-A2-Benton-Mark#readme",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.0.4"
   }
 }
