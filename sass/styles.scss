@@ -52,7 +52,7 @@ h1 {
     content: "";
     position: absolute;
     height: 1px;
-    background-color: $main-black;
+    background-color: $about-background;
     margin-left: 3%;
   }
   &:before {
@@ -70,13 +70,13 @@ header > p {
 }
 
 .awesome-sm {
-  border-bottom: 3px solid $main-orange;
+  border-bottom: 3px solid $serv-cont-background;
 }
 
 /* -- lines created on h1 -- */
 
 .section-orange {
-  background-color: $main-orange;
+  background-color: $serv-cont-background;
   color: #fff;
   padding-bottom: 2em;
   & > h1:before, & > h1:after {
@@ -91,7 +91,7 @@ header > p {
 }
 
 .section-black {
-  background-color: $main-black;
+  background-color: $about-background;
   color: #fff;
   & > h1:before, & > h1:after {
     background-color: #fff;
@@ -111,7 +111,7 @@ header > p {
     content: "";
     position: absolute;
     height: 1px;
-    background-color: $main-black;
+    background-color: $about-background;
     margin-left: 2%;
   }
   &:before {
@@ -243,7 +243,7 @@ th {
 tr {
   background-color: #fff;
   color: #000;
-  border-bottom: .1em solid $main-orange;
+  border-bottom: .1em solid $serv-cont-background;
 }
 td {
   padding-top: .5em;
@@ -253,14 +253,14 @@ th, .table-price {
   padding: 1em;
 }
 .table-price {
-  color: $main-orange;
+  color: $serv-cont-background;
 }
 .table-foot {
   background-color: #C1530D;
   color: #fff;
 }
 .button-signup {
-  background-color: $main-orange;
+  background-color: $serv-cont-background;
   margin: 1em;
   border: none;
   padding-left: 1em;
@@ -272,13 +272,13 @@ th, .table-price {
 /*---About and skills section css---*/
 progress {
   width: 83%;
-  background-color: $main-orange;
+  background-color: $serv-cont-background;
 }
 progress::-moz-progress-bar {
-  background: $main-orange;
+  background: $serv-cont-background;
 }
 progress::-webkit-progress-value {
-  background-color: $main-orange;
+  background-color: $serv-cont-background;
 }
 .skill-list {
   font-size: .8em;
@@ -305,7 +305,7 @@ nav {
 
 .portfolio-nav {
   & a:hover{
-    background-color: $main-orange;
+    background-color: $serv-cont-background;
     color: #ffffff;
   }
   & li{
@@ -334,7 +334,7 @@ nav {
 
 .button-contact {
   margin-bottom: 4em;
-  background-color: $main-orange;
+  background-color: $serv-cont-background;
   color: #fff;
   border: none;
   font-size: .8em;
@@ -382,7 +382,7 @@ nav {
   margin-top: 2em;
 }
 .client-name {
-  color: $main-orange;
+  color: $serv-cont-background;
   padding-left: 1em;
   margin-left: .7em;
 }
@@ -448,7 +448,7 @@ nav {
     background-color: #fffc00;
   }
   & li:hover{
-    background-color: $main-orange;
+    background-color: $serv-cont-background;
   }
 }
 
@@ -465,7 +465,7 @@ nav {
     }
   }
   & button {
-    color: $main-orange;
+    color: $serv-cont-background;
     font-weight: 500;
   }
   & textarea {
@@ -534,7 +534,7 @@ footer {
   }
   & a {
     text-decoration: none;
-    color: $main-orange;
+    color: $serv-cont-background;
   }
 }
 

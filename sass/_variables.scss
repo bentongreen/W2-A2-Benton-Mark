@@ -2,9 +2,11 @@
 $main-font: Helvetica, Arial, "Lucida Grande", sans-serif;
 
 /*- colors -*/
+$serv-cont-background: $alpha;
+$alpha: #FF6124;
 
-$main-orange: #FF6124;
-$main-black: #585050;
+$about-background: $beta;
+$beta: #585050;
 
 /*- social media icons -*/
 $icons:(facebook 'b') (twitter 'a') (dribble, 'D') (linkedin 'j') (gplus 'c');
