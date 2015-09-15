@@ -35,7 +35,6 @@ body {
   font-weight: 300;
 }
 
-
 nav li {
   display: inline-block;
 }
@@ -144,8 +143,18 @@ header > p {
 }
 .column-right {
   float: right;
+  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
+    width: 32em;
+    margin-right: 16%;
+  }
 }
 
+@media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
+  .column-left {
+    margin-left: 16%;
+    width: 32em;
+  }
+}
 /*---Navigation menu css---*/
 
 .nav-li {
@@ -198,30 +207,45 @@ header > p {
   @media only screen and (max-width: 1000px) {
     width: 50%;
   }
+  @media only screen and (max-width: 1200px) {
+    width: 35%;
+  }
+  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
+    width: 31%;
+  }
 }
 
 .flex-item-2 {
   width: 100%;
   height: 20em;
+  @media only screen and (max-width: 1200px) {
+    width: 50%;
+  }
   @media only screen and (max-width: 750px) {
     width: 100%;
+  }
+  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
+    width: 31.5%;
   }
 }
 
 .flex-item-3 {
   width: 22%;
   height: 20em;
+  @media only screen and (max-width: 700px) {
+  width: 33%;
+}
   @media only screen and (max-width: 500px) {
     width: 50%;
     line-height: 3em;
-  }
-  @media only screen and (max-width: 700px) {
-    width: 33%;
   }
 }
 
 .flex-item-4 {
   width: 22.5%;
+  @media only screen and (max-width: 1200px) {
+    width: 50%;
+  }
   @media only screen and (max-width: 700px) {
     width: 100%;
   }
@@ -282,12 +306,12 @@ th, .table-price {
 progress {
   width: 83%;
   background-color: $main-orange;
-}
-progress::-moz-progress-bar {
-  background: $main-orange;
-}
-progress::-webkit-progress-value {
-  background-color: $main-orange;
+  &::-moz-progress-bar {
+    background: $main-orange;
+  }
+  &::-webkit-progress-value {
+    background-color: $main-orange;
+  }
 }
 .skill-list {
   font-size: .8em;
@@ -358,6 +382,10 @@ nav {
 .team-para {
   font-size: .9em;
   margin: 1em;
+  @media only screen and (max-width: 1200px) {
+    max-width: 18em;
+    display: inline-flex;
+  }
 }
 
 .client-wrapper {
@@ -503,10 +531,14 @@ nav {
   padding: .5em 1em;
   border: none;
   background-color: #fff;
+  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
+    float: right;
+  }
 }
 .map-container {
   margin-top: 3em;
 }
+
 .map {
   width: 100%;
   background-image: url("./../imgs/sm-map.gif");
@@ -575,42 +607,6 @@ footer {
   }
   img[class="carousel-lrg"] {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-  .message-button {
-    float: right;
-  }
-  .flex-item-1 {
-    width: 31%;
-  }
-  .flex-item-2 {
-    width: 31.5%;
-  }
-  .column-right {
-    width: 32em;
-    margin-right: 16%;
-  }
-  .column-left {
-    margin-left: 16%;
-    width: 32em;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .flex-item-1 {
-    width: 35%;
-  }
-  .flex-item-2 {
-    width: 50%;
-  }
-   .flex-item-4 {
-    width: 50%;
-  }
-  .team-para {
-    max-width: 18em;
-    display: inline-flex;
   }
 }
 
