@@ -7,6 +7,15 @@
 // Global Styles
 @import "_globals.scss";
 
+
+$main-font: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+/*- colors -*/
+
+$main-orange: #FF6124;
+$main-black: #585050;
+
+
 /*---general page and components css---*/
 html {
   box-sizing: border-box;
@@ -46,66 +55,83 @@ h1 {
   position: relative;
   margin-bottom: 2em;
   margin-top: 2em;
+  &:after, &:before {
+    top: 51%;
+    width: 32%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $main-black;
+    margin-left: 3%;
+  }
+  &:before {
+    margin-left: -35%;
+    text-align: right;
+  }
 }
+
 header > p {
   padding-bottom: .5em;
 }
 .awesome-sm {
-    border-bottom: 3px solid #FF6124;
+  border-bottom: 3px solid $main-orange;
 }
 
 /* -- lines created on h1 -- */
 
-h1:after, h1:before {
-  top: 51%;
-  width: 32%;
-  content: "";
-  position: absolute;
-  height: 1px;
-  background-color: #585050;
-  margin-left: 3%;
+.section-orange {
+  background-color: $main-orange;
+  color: #fff;
+  padding-bottom: 2em;
+  & > h1:before, & > h1:after {
+    background-color: #fff;
+  }
+  & > .subheader:before, & > .subheader:after {
+    background-color: #fff;
+  }
+  p {
+    line-height: 1.5em;
+  }
 }
 
-h1:before {
-  margin-left: -35%;
-  text-align: right;
-}
-
-.section-orange > h1:before, .section-orange > h1:after {
-  background-color: #fff;
-}
-
-.section-black > h1:before, .section-black > h1:after {
-  background-color: #fff;
+.section-black {
+  background-color: $main-black;
+  color: #fff;
+  & > h1:before, & > h1:after {
+    background-color: #fff;
+  }
+  p {
+    line-height: 1.5em;
+  }
 }
 
 .subheader {
   position: relative;
   margin-bottom: 2em;
   margin-top: 2em;
+  &:before, &:after {
+    top: 51%;
+    width: 20%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $main-black;
+    margin-left: 2%;
+  }
+  &:before {
+    margin-left: -22%;
+    text-align: right;
+  }
 }
-.subheader:before, .subheader:after {
-  top: 51%;
-  width: 20%;
-  content: "";
-  position: absolute;
-  height: 1px;
-  background-color: #585050;
-  margin-left: 2%;
-}
+
 .subheader-skills:before, .subheader-skills:after {
   background-color: #fff;
 }
-.subheader:before {
-  margin-left: -22%;
-  text-align: right;
-}
-.section-orange > .subheader:before, .section-orange > .subheader:after {
-  background-color: #fff;
-}
+
 .section-white > .subheader:before, .section-white > .subheader:after {
   background-color: #000;
 }
+
 
 .column-two {
   -webkit-column-count: 2;
@@ -115,16 +141,8 @@ h1:before {
 .column-right {
   float: right;
 }
-.section-orange {
-  background-color: #FF6124;
-  color: #fff;
-  padding-bottom: 2em;
-}
 
-.section-black {
-  background-color: #585050;
-  color: #fff;
-}
+
 
 /*---Navigation menu css---*/
 
@@ -200,7 +218,7 @@ th {
 tr {
   background-color: #fff;
   color: #000;
-  border-bottom: .1em solid #FF6124;
+  border-bottom: .1em solid $main-orange;
 }
 td {
   padding-top: .5em;
@@ -210,14 +228,14 @@ th, .table-price {
   padding: 1em;
 }
 .table-price {
-  color: #FF6124;
+  color: $main-orange;
 }
 .table-foot {
   background-color: #C1530D;
   color: #fff;
 }
 .button-signup {
-  background-color: #FF6124;
+  background-color: $main-orange;
   margin: 1em;
   border: none;
   padding-left: 1em;
@@ -225,20 +243,17 @@ th, .table-price {
   text-decoration: none;
   color: #FFF;
 }
-.section-orange p, .section-black p {
-  line-height: 1.5em;
-}
 
 /*---About and skills section css---*/
 progress {
   width: 83%;
-  background-color: #FF6124;
+  background-color: $main-orange;
 }
 progress::-moz-progress-bar {
-  background: #FF6124;
+  background: $main-orange;
 }
 progress::-webkit-progress-value {
-  background-color: #FF6124;
+  background-color: $main-orange;
 }
 .skill-list {
   font-size: .8em;
@@ -251,19 +266,20 @@ progress::-webkit-progress-value {
 }
 
 /*---portfolio section css---*/
-nav a {
-  text-decoration: none;
-  color: #989595;
-  font-weight: bold;
-  padding: 0 1em;
-}
-
-nav-a:hover {
-  color: #000000;
+nav {
+  a {
+    text-decoration: none;
+    color: #989595;
+    font-weight: bold;
+    padding: 0 1em;
+    :hover {
+      color: #000;
+    }
+  }
 }
 
 .portfolio-nav a:hover{
-  background-color: #FF6124;
+  background-color: $main-orange;
   color: #ffffff;
 }
 
@@ -292,7 +308,7 @@ nav-a:hover {
 
 .button-contact {
   margin-bottom: 4em;
-  background-color: #FF6124;
+  background-color: $main-orange;
   color: #fff;
   border: none;
   font-size: .8em;
@@ -333,7 +349,7 @@ nav-a:hover {
   margin-top: 2em;
 }
 .client-name {
-  color: #FF6124;
+  color: $main-orange;
   padding-left: 1em;
   margin-left: .7em;
 }
@@ -419,7 +435,7 @@ nav-a:hover {
 }
 
 .social-media li:hover{
-  background-color: #FF6124;
+  background-color: $main-orange;
 }
 
 /*---Contact us section css---*/
@@ -431,7 +447,7 @@ nav-a:hover {
 }
 
 .contact-us button {
-  color: #FF6124;
+  color: $main-orange;
   font-weight: 500;
 }
 
@@ -496,15 +512,14 @@ footer {
   padding-top: 2em;
   text-align: center;
   padding-bottom: 5em;
-}
-
-footer p {
-  margin-top: 2em;
+  p {
+    margin-top: 2em;
+  }
 }
 
 footer a{
   text-decoration: none;
-  color: #FF6124;
+  color: $main-orange;
 }
 
 /* -- media queries --*/
