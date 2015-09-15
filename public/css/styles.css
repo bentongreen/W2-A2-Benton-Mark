@@ -27,9 +27,7 @@ nav li {
 nav, section {
   text-align: center;
  }
-header > p {
-    margin-bottom: -.7em;
-  }
+
 section {
   padding: 2em 5% 0;
 }
@@ -136,13 +134,10 @@ header {
 }
 
 /*---main header css---*/
-.header-section {
+.header {
   font-size: 2em;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   height: 17em;
-}
-
-.header-section {
   background-image: url("../imgs/top-bkgrnd.jpg");
 }
 
@@ -533,9 +528,6 @@ footer a{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 850px) {
-  object {
-    display: none;
-  }
   .awesome-sm {
     border-bottom: 3px solid #FF6124;
   }
@@ -545,12 +537,7 @@ footer a{
   }
 }
 @media only screen and (min-width: 850px) {
-  object {
-    display: inline;
-    width: 14.5em;
-    margin-left: -1.75em;
-    margin-top: -5.7em;
-  }
+
 }
 @media only screen and (max-width: 850px) {
  .nav-li {
@@ -668,7 +655,5 @@ footer a{
 }
 
 @media only screen and (max-width: 1200px) {
-  .client-wrapper {
-    display: inline-flex;
-  }
+
 }
