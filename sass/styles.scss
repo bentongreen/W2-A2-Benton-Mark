@@ -411,24 +411,10 @@ nav {
     font-style: normal;
 }
 
-.facebook:before {
-  content: "b";
-}
-
-.twitter:before {
-  content: "a";
-}
-
-.dribble:before {
-  content: "D";
-}
-
-.linkedin:before {
-  content: "j";
-}
-
-.gplus:before {
-  content: "c";
+@each $icon in $icons {
+  .#{nth($icon, 1)}:before {
+    content: nth($icon, 2);
+  }
 }
 
 .socicon {
