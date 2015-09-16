@@ -1,0 +1,28 @@
+.social-media {
+  list-style-type: none;
+  margin-right: 2em;
+  a {
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+  }
+  & .facebook {
+    background-color: #3b5998;
+  }
+  & .twitter {
+    background-color: #4099FF;
+  }
+  & .dribble {
+    background-color: #ea4c89;
+  }
+  & .linkedin {
+    background-color: #007bb5;
+  }
+  & .gplus {
+    background-color: #fffc00;
+  }
+  & > li:hover{
+    background-color: $serv-cont-background;
+  }
+}
