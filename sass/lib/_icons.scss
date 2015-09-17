@@ -1,9 +1,10 @@
 /*- social media icons -*/
-$icons: (facebook "\e601") (twitter "\e602") (dribble, "\e603") (linkedin "\e604") (gplus "\e600");
+$icons: (facebook "\e601") (twitter "\e602") (dribble, "\e603") (linkedin "\e604") (gplus "\e600") (arrowRight "\e605") (arrowLeft "\e606");
 
 @each $icon in $icons {
   .#{nth($icon, 1)}:before {
     content: nth($icon, 2);
+    text-decoration: none;
   }
 }
 
