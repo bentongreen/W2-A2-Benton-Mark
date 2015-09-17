@@ -1,0 +1,95 @@
+
+
+/*---Contact us section css---*/
+
+.contact-us {
+
+  button {
+    color: $serv-cont-background;
+    font-weight: 500;
+  }
+  textarea {
+    color: #fff;
+    height: 10em;
+    padding-top: .8em;
+  }
+}
+
+.message-button {
+  font-size: smaller;
+  padding: .5em 1em;
+  border: none;
+  background-color: #fff;
+  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
+    float: right;
+  }
+}
+.map-form-container {
+  margin-top: 3em;
+  width: 100%;
+  @include flexbox;
+  padding-left: 0;
+}
+
+.map-form {
+
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  height: 22em;
+  padding: 0 2%;
+  color: #606060;
+  width: 100%;
+  max-width: 29em;
+}
+
+.map {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-flex: 0 2 29em;
+  -ms-flex: 0 2 29em;
+  flex: 0 2 29em;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  background-image: url("./../imgs/sm-map.gif");
+  background-repeat: no-repeat;
+  background-image: url("./../imgs/sm-map-hover.gif");
+  background-repeat: no-repeat;
+  height: 24em;
+  background-size: contain;
+}
+
+input, textarea {
+  background-color: #703A20;
+  border: none;
+  width: 100%;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+   font-size: .8em;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+   font-size: .8em;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+   font-size: .8em;
+}
+:-ms-input-placeholder {
+   color: #fff;
+   font-size: .8em;
+}
+
