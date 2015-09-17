@@ -1,0 +1,33 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  overflow: auto;
+}
+
+body {
+  margin: auto;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav, section {
+  text-align: center;
+ }
+
+section {
+  padding: 2em 5% 0;
+}
+img {
+  max-width: 100%;
+}
