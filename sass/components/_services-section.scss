@@ -35,15 +35,6 @@
   min-width: 33%;
   margin: 0 10%;
 }
-.column-right {
-  margin-right: 23%;
-  margin-left: 1em;
-  font-size: .9em;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    margin: 0 20% 0 0;
-  }
-}
 
 .column-left {
   margin-left: 23%;
@@ -55,17 +46,19 @@
   }
 }
 
+.column-right {
+  margin-right: 23%;
+  margin-left: 1em;
+  font-size: .9em;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0 20% 0 0;
+  }
+}
+
 .services-container {
   width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  -webkit-justify-content: center;
-  -webkit-flex-wrap: wrap;
-  text-align: center;
+  @include flexbox;
   padding: 0 5%;
 }
 
@@ -108,5 +101,3 @@
     }
   }
 }
-
-
