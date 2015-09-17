@@ -1,0 +1,16 @@
+/*---Navigation menu css---*/
+
+.nav-li {
+  margin-left: 3em;
+  @media only screen and (max-width: 850px) {
+    font-size: .8em;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 1em;
+    margin-right: 2em;
+    margin-bottom: .5em;
+    border: 2px solid black;
+    border-radius: .5em;
+    padding: .4em;
+  }
+}

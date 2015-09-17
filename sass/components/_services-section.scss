@@ -1,0 +1,112 @@
+
+/*----SERVICES----*/
+
+%services {
+  margin-bottom: 4em;
+  & h2 {
+    line-height: 3em;
+  }
+}
+%bkgrnd-image {
+  display: block;
+  height: 6em;
+  content: '';
+  background-size: contain;
+  background-position: center;
+}
+
+.service-intro {
+  margin: auto 13%;
+}
+
+.column-two {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  margin: 2em;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.column {
+  min-width: 33%;
+  margin: 0 10%;
+}
+.column-right {
+  margin-right: 23%;
+  margin-left: 1em;
+  font-size: .9em;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0 20% 0 0;
+  }
+}
+
+.column-left {
+  margin-left: 23%;
+  margin-right: 1em;
+  font-size: .9em;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0 20% 2em 0;
+  }
+}
+
+.services-container {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  -webkit-flex-wrap: wrap;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.services-item {
+  width: 30%;
+  padding: 0 2%;
+  text-align: center;
+  min-width: 20em;
+}
+
+.ux-design {
+  margin-bottom: 4em;
+  h2 {
+    line-height: 3em;
+    &:after {
+      @extend %bkgrnd-image;
+      background: url("./../imgs/brush.gif") 50% 0 no-repeat;
+    }
+  }
+}
+
+.laboratory {
+  margin-bottom: 4em;
+  h2 {
+    line-height: 3em;
+    &:after {
+      @extend %bkgrnd-image;
+      background: url("./../imgs/erhlenmeyer.gif") 50% 0em no-repeat;
+    }
+  }
+}
+
+.development {
+  margin-bottom: 4em;
+  h2 {
+    line-height: 3em;
+    &:after {
+      @extend %bkgrnd-image;
+      background: url("./../imgs/gear.gif") 50% 0em no-repeat;
+    }
+  }
+}
+
+
