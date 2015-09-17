@@ -19,6 +19,7 @@
 @import "components/team-section";
 @import "components/contact-section";
 @import "components/footer";
+@import "components/client-section";
 /*---general page and components css---*/
 
 
@@ -90,13 +91,6 @@ h1 {
   background-color: #000;
 }
 
-.arrowLeft{
-  @include navArrows;
-}
-
-.arrowRight{
-  @include navArrows;
-}
 
 /*---css for social media links/icon fonts ---*/
 @font-face {

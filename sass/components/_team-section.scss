@@ -2,15 +2,15 @@
 /*---Team and clients CSS---*/
 
 .team-container {
-  width: 100%;
   @include flexbox;
+  width: 100%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .team-list {
   text-align: center;
-  width: 20%;
+  width: 17em;
   min-width: 17em;
   h2 {
     font-size: 1.25em;
@@ -38,53 +38,4 @@
     max-width: 18em;
     display: inline-flex;
   }
-}
-
-.client-wrapper {
-  display: inline-flex;
-  display: -webkit-flex;
-  margin-left: 9%;
-  margin-right: 9%;
-  margin-bottom: 3em;
-  @media only screen and (max-width: 750px) {
-    display: block;
-  }
-}
-
-.client-section {
-  display: flex;
-  display: -webkit-flex;
-  text-align: left;
-  padding-left: 3em;
-  padding-right: 3em;
-  width: 100%;
-}
-
-//
-
-.arrow {
-  padding-bottom: 2em;
-  margin-top: 4em;
-}
-.client-pic-wrapper {
-  margin-top: 2em;
-}
-
-.client-name {
-  color: $serv-cont-background;
-  padding-left: 1em;
-  margin-left: .7em;
-}
-.client-title {
-  font-weight: 400;
-  font-size: .8em;
-}
-.client-text {
-  margin-left: 2em;
-  padding-bottom: 2em;
-  margin-right: 0;
-  font-size: .9em;
-}
-.client-text-wrapper {
-  margin-top: 1em;
 }
