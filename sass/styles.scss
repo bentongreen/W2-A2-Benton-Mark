@@ -11,10 +11,11 @@
 //Components
 @import "components/primary-header";
 @import "components/pricing-table";
+@import "components/portfolio-section";
 @import "components/social-media";
 @import "components/services-section";
 @import "components/nav-bar";
-
+@import "components/about-section";
 /*---general page and components css---*/
 
 
@@ -60,10 +61,10 @@ header > p {
   background-color: $serv-cont-background;
   color: #fff;
   padding-bottom: 2em;
-  & > h1:before, & > h1:after {
+  > h1:before, > h1:after {
     background-color: #fff;
   }
-  & > .subheader:before, & > .subheader:after {
+  > .subheader:before, & > .subheader:after {
     background-color: #fff;
   }
 }
@@ -71,7 +72,7 @@ header > p {
 .section-black {
   background-color: $about-background;
   color: #fff;
-  & > h1:before, & > h1:after {
+  > h1:before, > h1:after {
     background-color: #fff;
   }
 }
@@ -79,6 +80,7 @@ header > p {
 .subheader {
   position: relative;
   margin-bottom: 2em;
+  margin-top: 2em;
   &:before, &:after {
     top: 51%;
     width: 20%;
@@ -109,18 +111,10 @@ header > p {
 /*---services section css---*/
 .flex-container {
   width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  -webkit-justify-content: center;
-  -webkit-flex-direction: row;
-  -webkit-flex-wrap: wrap;
+  @include flexbox;
   padding-left: 0;
 }
-.flex-item-2, .flex-item-4 {
+.flex-item-4 {
   text-align: center;
 }
 
@@ -142,20 +136,6 @@ header > p {
   }
 }
 
-.flex-item-2 {
-  width: 100%;
-  height: 20em;
-  @media only screen and (max-width: 1200px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 750px) {
-    width: 100%;
-  }
-  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-    width: 31.5%;
-  }
-}
-
 .flex-item-4 {
   width: 22.5%;
   @media only screen and (max-width: 1200px) {
@@ -166,78 +146,11 @@ header > p {
   }
 }
 
-/*---About and skills section css---*/
-progress {
-  width: 83%;
-  background-color: $serv-cont-background;
-}
-progress::-moz-progress-bar {
-  background: $serv-cont-background;
-}
-progress::-webkit-progress-value {
-  background-color: $serv-cont-background;
-
-}
-.skill-list {
-  font-size: .8em;
-  text-align: left;
-  margin-left: 8.5em;
-  margin-bottom: auto;
-}
-.skills-para {
-  padding: 2em 0;
-}
-
-/*---portfolio section css---*/
-nav {
-  a {
-    text-decoration: none;
-    color: #989595;
-    font-weight: bold;
-    padding: 0 1em;
-    :hover {
-      color: #000;
-    }
-  }
-}
-
-.portfolio-nav {
-  & a:hover{
-    background-color: $serv-cont-background;
-    color: #ffffff;
-  }
-  & li{
-    margin-right: 1em;
-  }
-}
-
-.carousel-lrg {
-  width: 68em;
-}
-
-.design {
-  margin-bottom: 0;
-  & + p {
-    color: #989595;
-    margin-top: 0;
-  }
-}
-
 /*---Team and clients CSS---*/
 .team-title {
   font-size: 1em;
   font-weight: 300;
   margin-top: -1.2em;
-}
-
-.button-contact {
-  margin-bottom: 4em;
-  background-color: $serv-cont-background;
-  color: #fff;
-  border: none;
-  font-size: .8em;
-  padding: 1em 2.5em;
-  font-weight: 500;
 }
 
 .face-pic {
@@ -399,23 +312,6 @@ footer {
   & a {
     text-decoration: none;
     color: $serv-cont-background;
-  }
-}
-
-/* -- media queries --*/
-
-@media only screen and (max-width: 700px) {
-  div[class=carousel_portfolio] {
-    display: block;
-    background-image: url("./../imgs/portfolio-sm.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 32em;
-    height: 16em;
-    max-width: 100%;
-  }
-  img[class="carousel-lrg"] {
-    display: none;
   }
 }
 
