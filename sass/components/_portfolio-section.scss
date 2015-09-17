@@ -1,0 +1,64 @@
+
+/*---portfolio section css---*/
+
+nav {
+  a {
+    text-decoration: none;
+    color: #989595;
+    font-weight: bold;
+    padding: 0 1em;
+    :hover {
+      color: #000;
+    }
+  }
+}
+
+.portfolio-nav {
+  a:hover{
+    background-color: $serv-cont-background;
+    color: #ffffff;
+  }
+  li{
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div[class=carousel_portfolio] {
+    display: block;
+    background-image: url("./../imgs/portfolio-sm.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32em;
+    height: 16em;
+    max-width: 100%;
+  }
+  img[class="carousel-lrg"] {
+    display: none;
+  }
+}
+
+.design-list-container {
+  @include flexbox;
+  width: 100%;
+  padding-left: 0;
+}
+
+
+.design-list {
+  width: 27%;
+  height: 19em;
+  min-width: 20em;
+  img {
+    max-width: 16em;
+    width: 100%;
+    }
+}
+
+.design {
+  margin-bottom: 0;
+  + p {
+    color: #989595;
+    margin-top: 0;
+  }
+}
