@@ -90,18 +90,25 @@ h1 {
   background-color: #000;
 }
 
+.arrowLeft{
+  @include navArrows;
+}
+
+.arrowRight{
+  @include navArrows;
+}
+
 /*---css for social media links/icon fonts ---*/
 @font-face {
   font-family: 'icomoon';
-  src:url('../font/icomoon.eot?-kw8u6r');
-  src:url('../font/icomoon.eot?#iefix-kw8u6r') format('embedded-opentype'),
-    url('../font/icomoon.ttf?-kw8u6r') format('truetype'),
-    url('../font/icomoon.woff?-kw8u6r') format('woff'),
-    url('../font/icomoon.svg?-kw8u6r#icomoon') format('svg');
+  src:url('../font/icomoon.eot?-dtcabo');
+  src:url('../font/icomoon.eot?#iefix-dtcabo') format('embedded-opentype'),
+    url('../font/icomoon.ttf?-dtcabo') format('truetype'),
+    url('../font/icomoon.woff?-dtcabo') format('woff'),
+    url('../font/icomoon.svg?-dtcabo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
 
 @media only screen and (max-width: 700px) {
   .nav-ul {
@@ -117,5 +124,3 @@ h1 {
     -webkit-flex-wrap: wrap;
   }
 }
-
-
