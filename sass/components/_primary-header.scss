@@ -3,6 +3,22 @@
 .header {
   font-size: 2em;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-  height: 14em;
   background-image: url("../imgs/top-bkgrnd.jpg");
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  header > p {
+    padding-bottom: .5em;
+    @media only screen and (min-width: 300px) and (max-width: 850px) {
+      margin-bottom: .3em;
+      padding-bottom: .3em;
+    }
+  }
+}
+
+
+.awesome-sm {
+  border-bottom: 3px solid $serv-cont-background;
 }

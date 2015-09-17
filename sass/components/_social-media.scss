@@ -7,22 +7,22 @@
   li {
     display: inline;
   }
-  & .facebook {
+  .facebook {
     background-color: #3b5998;
   }
-  & .twitter {
+  .twitter {
     background-color: #4099FF;
   }
-  & .dribble {
+  .dribble {
     background-color: #ea4c89;
   }
-  & .linkedin {
+  .linkedin {
     background-color: #007bb5;
   }
-  & .gplus {
+  .gplus {
     background-color: #fffc00;
   }
-  & > li:hover{
+  > li:hover{
     background-color: $serv-cont-background;
   }
 }

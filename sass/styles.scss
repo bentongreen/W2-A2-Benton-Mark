@@ -16,6 +16,9 @@
 @import "components/services-section";
 @import "components/nav-bar";
 @import "components/about-section";
+@import "components/team-section";
+@import "components/contact-section";
+@import "components/footer";
 /*---general page and components css---*/
 
 
@@ -36,23 +39,6 @@ h1 {
     margin-left: -35%;
     text-align: right;
   }
-}
-
-p {
-  line-height: 1.5em;
-  margin: auto 10%
-}
-
-header > p {
-  padding-bottom: .5em;
-  @media only screen and (min-width: 300px) and (max-width: 850px) {
-    margin-bottom: .3em;
-    padding-bottom: .3em;
-  }
-}
-
-.awesome-sm {
-  border-bottom: 3px solid $serv-cont-background;
 }
 
 /* -- lines created on h1 -- */
@@ -104,114 +90,6 @@ header > p {
   background-color: #000;
 }
 
-.service-logo {
-  margin-bottom: 1.5em;
-}
-
-/*---services section css---*/
-.flex-container {
-  width: 100%;
-  @include flexbox;
-  padding-left: 0;
-}
-.flex-item-4 {
-  text-align: center;
-}
-
-.flex-item-1 {
-  width: 100%;
-  height: 24em;
-  padding: 0 2%;
-  @media only screen and (max-width: 700px) {
-    width: 60%;
-  }
-  @media only screen and (max-width: 1000px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 1200px) {
-    width: 35%;
-  }
-  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-    width: 31%;
-  }
-}
-
-.flex-item-4 {
-  width: 22.5%;
-  @media only screen and (max-width: 1200px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 700px) {
-    width: 100%;
-  }
-}
-
-/*---Team and clients CSS---*/
-.team-title {
-  font-size: 1em;
-  font-weight: 300;
-  margin-top: -1.2em;
-}
-
-.face-pic {
-  padding-bottom: 1em;
-}
-
-.team-para {
-  font-size: .85em;
-  margin: 1em 2em;
-  @media only screen and (max-width: 1200px) {
-    max-width: 18em;
-    display: inline-flex;
-  }
-}
-
-.client-wrapper {
-  display: inline-flex;
-  display: -webkit-flex;
-  margin-left: 9%;
-  margin-right: 9%;
-  margin-bottom: 3em;
-  @media only screen and (max-width: 750px) {
-    display: block;
-  }
-}
-
-.client-section {
-  display: flex;
-  display: -webkit-flex;
-  text-align: left;
-  padding-left: 3em;
-  padding-right: 3em;
-  width: 100%;
-}
-.arrow {
-  padding-bottom: 2em;
-  margin-top: 4em;
-}
-.client-pic-wrapper {
-  margin-top: 2em;
-}
-
-.client-name {
-  color: $serv-cont-background;
-  padding-left: 1em;
-  margin-left: .7em;
-}
-.client-title {
-  font-weight: 400;
-  font-size: .8em;
-}
-.client-text {
-  margin-left: 2em;
-  padding-bottom: 2em;
-  margin-right: 0;
-  font-size: .9em;
-}
-.client-text-wrapper {
-  margin-top: 1em;
-}
-
 .arrowLeft{
   @include navArrows;
 }
@@ -230,95 +108,6 @@ header > p {
     url('../font/icomoon.svg?-dtcabo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-/*---Contact us section css---*/
-
-.contact-us {
-  & form {
-    color: #606060;
-    width: 100%;
-    @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-      width: 38%;
-      height: 20em;
-      margin-right: 3em;
-    }
-  }
-  & button {
-    color: $serv-cont-background;
-    font-weight: 500;
-  }
-  & textarea {
-    color: #fff;
-    height: 10em;
-    padding-top: .8em;
-  }
-}
-
-.message-button {
-  font-size: smaller;
-  padding: .5em 1em;
-  border: none;
-  background-color: #fff;
-  @media only screen and (min-width: 700px), only screen and (min-width: 700px) and (orientation: landscape) {
-    float: right;
-  }
-}
-.map-container {
-  margin-top: 3em;
-}
-
-.map {
-  background-image: url("./../imgs/sm-map.gif");
-  background-repeat: no-repeat;
-  background-image: url("./../imgs/sm-map-hover.gif");
-  background-repeat: no-repeat;
-  min-width: 31em;
-  }
-
-
-input, textarea {
-  background-color: #703A20;
-  border: none;
-  width: 100%;
-  padding-left: 1em;
-  margin-bottom: 1em;
-  color: #fff;
-}
-
-form {
-  max-width: 100%;
-  min-width: 31em;
-}
-
-::-webkit-input-placeholder {
-   color: #fff;
-   font-size: .8em;
-}
-:-moz-placeholder { /* Firefox 18- */
-   color: #fff;
-   font-size: .8em;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;
-   font-size: .8em;
-}
-:-ms-input-placeholder {
-   color: #fff;
-   font-size: .8em;
-}
-
-/*---footer css---*/
-footer {
-  padding-top: 2em;
-  text-align: center;
-  padding-bottom: 5em;
-  & p {
-    margin-top: 2em;
-  }
-  & a {
-    text-decoration: none;
-    color: $serv-cont-background;
-  }
 }
 
 @media only screen and (max-width: 700px) {
