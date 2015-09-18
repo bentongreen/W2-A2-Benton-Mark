@@ -1,20 +1,29 @@
 /*---Navigation menu css---*/
 
-.nav-li {
-  margin-left: 3em;
-  @media only screen and (max-width: 850px) {
-    font-size: .8em;
-  }
-  @media only screen and (max-width: 700px) {
-    font-size: 1em;
-    margin-right: 2em;
-    margin-bottom: .5em;
-    border: 2px solid black;
-    border-radius: .5em;
-    padding: .4em;
+#home {
+  border-bottom: 1px $secondary-text solid;
+  a {
+    text-decoration: none;
+    color: #989595;
+    font-weight: bold;
+    :hover {
+      color: #000;
+    }
   }
 }
 
-.nav-li a:hover{
-  color: #151515;
+
+.nav-ul {
+  @include flexbox;
 }
+.nav-li {
+  padding-right: 3em;
+  a:hover {
+    color: #151515;
+  }
+  @media only screen and (max-width: 900px) {
+      display: block;
+      margin: 1em;
+  }
+}
+
