@@ -6,21 +6,18 @@
     text-decoration: none;
     color: #989595;
     font-weight: bold;
-    :hover {
-      color: #000;
+    &:hover {
+      color: #151515;
     }
   }
 }
 
-
 .nav-ul {
   @include flexbox;
 }
+
 .nav-li {
   padding-right: 3em;
-  a:hover {
-    color: #151515;
-  }
   @media only screen and (max-width: 900px) {
       display: block;
       margin: 1em;

@@ -56,10 +56,9 @@ h1 {
 
 /* -- lines created on h1 -- */
 
-.services-section {
+%section-line {
   background-color: $serv-cont-background;
   color: #fff;
-  padding-bottom: 2em;
   > h1:before, > h1:after {
     background-color: #fff;
   }
@@ -67,16 +66,15 @@ h1 {
     background-color: #fff;
   }
 }
-.contact-section {
-  background-color: $serv-cont-background;
-  color: #fff;
+
+
+.services-section {
   padding-bottom: 2em;
-  > h1:before, > h1:after {
-    background-color: #fff;
-  }
-  > .subheader:before, > .subheader:after {
-    background-color: #fff;
-  }
+  @extend %section-line
+}
+
+.contact-section {
+  @extend .services-section;
 }
 
 .about-section {
@@ -104,14 +102,17 @@ h1 {
     margin-left: -22%;
     text-align: right;
   }
-
 }
 
 .subheader-skills:before, .subheader-skills:after {
   background-color: #fff;
 }
 
-.section-white > .subheader:before, .section-white > .subheader:after {
+.portfolio-section > .subheader:before, .portfolio-section > .subheader:after {
   background-color: #000;
 }
+.team-section > .subheader:before, .team-section > .subheader:after {
+  background-color: #000;
+}
+
 
