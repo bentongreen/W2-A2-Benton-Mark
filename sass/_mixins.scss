@@ -25,3 +25,22 @@
   font-size: 2em;
   margin-top: 2em;
 }
+
+@mixin pseudoline ($margin-left, $before-margin-left) {
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  &:after, &:before {
+    top: 51%;
+    width: 32%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $about-background;
+    margin-left: $margin-left;
+  }
+  &:before {
+    margin-left: $before-margin-left;
+    text-align: right;
+  }
+}
