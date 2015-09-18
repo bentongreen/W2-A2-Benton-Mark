@@ -4,7 +4,7 @@
   border-bottom: 1px $secondary-text solid;
   a {
     text-decoration: none;
-    color: #989595;
+    color: $secondary-text;
     font-weight: bold;
     &:hover {
       color: #151515;
