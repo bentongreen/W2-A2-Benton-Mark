@@ -16,10 +16,33 @@ var selectTags = function(event){
 
 
 		//Show all tagged content that contains specified tag
-		$('[data-tags*="' + tag + '"]').stop(true).fadeTo( "fast", 1.0 );
+		$('[data-tags*="' + tag + '"]').stop(true).fadeTo( "fast", 1.0 )
 
 	});
 };
 
-	$('[data-show-tag]').click(selectTags);
+$('[data-show-tag]').click(selectTags);
+
+	//Validate information on form submission is not blank
+
+  $('#contact-submit').on('click', function(event) {
+
+	  event.preventDefault();
+
+	  var $name = $('#form_companyname').val();
+		var $email = $('#form_email').val()
+		var $message = $('#contact-form').val();
+
+	  if ($name === '') {
+  		alert("Please enter a valid name");
+  	} else if ($email === '') {
+  		alert("Please enter a valid email");
+  	} else if ($message === '') {
+  		alert("Please enter a valid message");
+  	} else {
+  		alert("Thank you for contacting us!");
+  	}
+  });
+
+
 

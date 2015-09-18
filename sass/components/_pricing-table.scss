@@ -22,7 +22,7 @@
 }
 
 th {
-  background-color: #703A20;
+  background-color: $table-head;
   color: #ffffff;
   padding: .5em;
   font-weight: 200;
@@ -33,7 +33,7 @@ tr {
   color: #000000;
   border-bottom: .1em solid $serv-cont-background;
   &:last-child {
-    background-color: #C1530D;
+    background-color: $table-foot;
     color: #ffffff;
     padding-top: 1.3em;
     padding-bottom: 1.3em;

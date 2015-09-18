@@ -24,14 +24,3 @@ $icons: (facebook "\e601") (twitter "\e602") (dribble, "\e603") (linkedin "\e604
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*---css for social media links/icon fonts ---*/
-@font-face {
-  font-family: 'icomoon';
-  src:url('../font/icomoon.eot?-dtcabo');
-  src:url('../font/icomoon.eot?#iefix-dtcabo') format('embedded-opentype'),
-    url('../font/icomoon.ttf?-dtcabo') format('truetype'),
-    url('../font/icomoon.woff?-dtcabo') format('woff'),
-    url('../font/icomoon.svg?-dtcabo#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
