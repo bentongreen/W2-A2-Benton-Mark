@@ -9,29 +9,14 @@
 @import "globals";
 
 //Components
+@import "components/nav-bar";
 @import "components/primary-header";
+@import "components/services-section";
 @import "components/pricing-table";
 @import "components/portfolio-section";
 @import "components/social-media";
-@import "components/services-section";
-@import "components/nav-bar";
 @import "components/about-section";
 @import "components/team-section";
 @import "components/contact-section";
-@import "components/footer";
 @import "components/client-section";
-/*---general page and components css---*/
-
-
-
-/*---css for social media links/icon fonts ---*/
-@font-face {
-  font-family: 'icomoon';
-  src:url('../font/icomoon.eot?-dtcabo');
-  src:url('../font/icomoon.eot?#iefix-dtcabo') format('embedded-opentype'),
-    url('../font/icomoon.ttf?-dtcabo') format('truetype'),
-    url('../font/icomoon.woff?-dtcabo') format('woff'),
-    url('../font/icomoon.svg?-dtcabo#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "components/footer";
