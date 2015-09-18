@@ -23,13 +23,14 @@ progress::-webkit-progress-value {
 }
 
 .contact-link {
-  margin-top: 2em;
   margin-bottom: 4em;
   background-color: $serv-cont-background;
-  color: #fff;
   border: none;
   font-size: .8em;
   padding: 1em 2.5em;
   font-weight: 500;
-  -webkit-appearance: button;
+  :first-child {
+    color: #fff;
+    text-decoration: none;
+  }
 }

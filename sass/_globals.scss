@@ -35,3 +35,83 @@ p {
   line-height: 1.5em;
   margin: auto 10%
 }
+h1 {
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  &:after, &:before {
+    top: 51%;
+    width: 32%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $about-background;
+    margin-left: 3%;
+  }
+  &:before {
+    margin-left: -35%;
+    text-align: right;
+  }
+}
+
+/* -- lines created on h1 -- */
+
+.services-section {
+  background-color: $serv-cont-background;
+  color: #fff;
+  padding-bottom: 2em;
+  > h1:before, > h1:after {
+    background-color: #fff;
+  }
+  > .subheader:before, > .subheader:after {
+    background-color: #fff;
+  }
+}
+.contact-section {
+  background-color: $serv-cont-background;
+  color: #fff;
+  padding-bottom: 2em;
+  > h1:before, > h1:after {
+    background-color: #fff;
+  }
+  > .subheader:before, > .subheader:after {
+    background-color: #fff;
+  }
+}
+
+.about-section {
+  background-color: $about-background;
+  color: #fff;
+  > h1:before, > h1:after {
+    background-color: #fff;
+  }
+}
+
+.subheader {
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  &:before, &:after {
+    top: 51%;
+    width: 20%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $about-background;
+    margin-left: 2%;
+  }
+  &:before {
+    margin-left: -22%;
+    text-align: right;
+  }
+
+}
+
+.subheader-skills:before, .subheader-skills:after {
+  background-color: #fff;
+}
+
+.section-white > .subheader:before, .section-white > .subheader:after {
+  background-color: #000;
+}
+

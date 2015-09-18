@@ -1,7 +1,7 @@
 
 /*---portfolio section css---*/
 
-nav {
+.portfolio-nav {
   a {
     text-decoration: none;
     color: #989595;
@@ -13,28 +13,18 @@ nav {
   }
 }
 
-.portfolio-nav {
-  a:hover{
+.portfolio-ul {
+  @include flexbox;
+  a:hover {
     background-color: $serv-cont-background;
     color: #ffffff;
   }
-  li{
+  li {
     margin-right: 1em;
-  }
-}
+    @media only screen and (max-width: 875px) {
+      margin-bottom: 1em;
 
-@media only screen and (max-width: 500px) {
-  div[class=carousel_portfolio] {
-    display: block;
-    background-image: url("./../imgs/portfolio-sm.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 32em;
-    height: 16em;
-    max-width: 100%;
-  }
-  img[class="carousel-lrg"] {
-    display: none;
+    }
   }
 }
 
@@ -55,12 +45,35 @@ nav {
     }
 }
 
-
 .design {
   margin-bottom: 0;
   + p {
-    color: #989595;
+    color: $secondary-text;
     margin-top: 0;
     font-size: .8em;
   }
 }
+
+// .carousel_portfolio {
+//   width: 100%;
+//   overflow: hidden;
+//   & img {
+//     display: block;
+//     width: 100%;
+//     max-width: 100%;
+//   }
+// }
+// .carousel-panes {
+//   width: 200%;
+//   list-style: none;
+//   position: relative;
+//   overflow: hidden;
+//   -moz-animation: carousel 8s infinite;
+//   -webkit-animation: carousel 8s infinite;
+//   animation: carousel 8s infinite;
+//   & > li {
+//     position: relative;
+//     float: left;
+//     width: 50%;
+//   }
+// }
