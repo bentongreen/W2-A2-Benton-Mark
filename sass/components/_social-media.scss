@@ -1,28 +1,33 @@
+%social-media-hover {
+  &:hover {
+    background-color: $serv-cont-background;
+  }
+}
+
 .social-media {
   list-style-type: none;
   margin-right: 2em;
-  a {
-    text-decoration: none;
-  }
   li {
     display: inline;
   }
   .facebook {
     background-color: #3b5998;
+    @extend %social-media-hover;
   }
   .twitter {
     background-color: #4099FF;
+    @extend %social-media-hover;
   }
   .dribble {
     background-color: #ea4c89;
+    @extend %social-media-hover;
   }
   .linkedin {
     background-color: #007bb5;
+    @extend %social-media-hover;
   }
   .gplus {
     background-color: #fffc00;
-  }
-  > li:hover{
-    background-color: $serv-cont-background;
+    @extend %social-media-hover;
   }
 }
