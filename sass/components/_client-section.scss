@@ -1,0 +1,57 @@
+
+.client-wrapper {
+  display: inline-flex;
+  display: -webkit-flex;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 3em;
+  @media only screen and (max-width: 750px) {
+    display: block;
+  }
+}
+
+.client-section {
+  @include flexbox;
+  text-align: left;
+  width: 100%;
+}
+.arrowLeft {
+  @include navArrows;
+  &:before {
+    margin-right: .5em;
+  }
+}
+
+.arrowRight {
+  @include navArrows;
+  &:before {
+    margin-right: .5em;
+  }
+}
+
+.client-pic-wrapper {
+  margin-top: 2em;
+  min-width: 5.125em;
+}
+.client-name-title {
+  display: flex;
+}
+.client-name {
+  color: $serv-cont-background;
+  padding-left: 1em;
+  margin-left: .7em;
+}
+.client-title {
+  font-weight: 400;
+  margin-left: 1em;
+}
+.client-text {
+  margin-left: 2em;
+  padding-bottom: 2em;
+  margin-right: 0;
+  font-size: .9em;
+}
+.client-text-wrapper {
+  margin-top: 1em;
+  width: 50em;
+}

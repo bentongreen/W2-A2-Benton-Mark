@@ -46,7 +46,6 @@ nav {
 
 
 .design-list {
-  width: 27%;
   height: 19em;
   min-width: 20em;
   text-align: center;
@@ -56,10 +55,12 @@ nav {
     }
 }
 
+
 .design {
   margin-bottom: 0;
   + p {
     color: #989595;
     margin-top: 0;
+    font-size: .8em;
   }
 }
