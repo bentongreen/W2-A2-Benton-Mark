@@ -46,3 +46,24 @@ $('[data-show-tag]').click(selectTags);
 
 
 
+//Slick Carousel by Ken Wheeler http://kenwheeler.github.io/slick/
+$(document).ready(function(){
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    responsive: true,
+    swipe: true,
+    dotsClass: true,
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    cssEase: "ease",
+    easing: "linear",
+    pauseOnHover: true,
+    touchMove: true
+  });
+});
+				
